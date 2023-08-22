@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name=" " content="">
     <!--Icono-->
     <link rel="shortcut icon" href="./images/Iconos/Mascara Luchador.avif" type="image/x-icon">
+    <!--Animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Bootstrap via CDN-->
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -16,7 +20,7 @@
 <body id="fondo-index" >
     <!--Logo-->
     <header class="flexbox">
-        <img class="linea" src="./images/Wrestling.jpg" alt="foto-Wrestling-home" width="200" height="100">
+        <img class="linea animate__animated animate__bounce" src="./images/Wrestling.jpg" alt="foto-Wrestling-home" width="200" height="100">
         <!--HTML Semantico-->
         <nav id="font-link" class="barra-navegacion-index">
             <div class="grid text-center">
@@ -31,50 +35,51 @@
     </header>
     
     <main>
-        <h1 class="font-t">DESTACADOS</h1>
+        <h1 class="font-t titulos animate__animated animate__fadeIn">DESTACADOS</h1>
         <section>
             <!--DESTACADOS--> 
             <article class="barra-navegacion-index">
             <!--Destacado de la semana 1-->
-                <p class="font-p">1.- Después de la paliza que Roman Reigns junto a Solo Sikoa le dioron a Jimmy Uso, que lo mandó al hospital, Jey Uso apareció de nueva cuenta en el ring del Madison Square Garden para encarar al Jefe Tribal y retarlo por el World Universal WWE Championship. </p>
+                <p class="font-p text-center animate__animated animate__shakeX">1.- Después de la paliza que Roman Reigns junto a Solo Sikoa le dioron a Jimmy Uso, que lo mandó al hospital, Jey Uso apareció de nueva cuenta en el ring del Madison Square Garden para encarar al Jefe Tribal y retarlo por el World Universal WWE Championship. </p>
             </article>
 
             <article class="barra-navegacion-index">
             <!--Destacado de la semana 2-->
-                <p class="font-p">2.- All Elite Wrestling anuncia la cartelera de AEW Battle of the Belts VII, esta se compone de los siguientes combates: </p>
-                <ol class="margen">
-                <li class="font-p">The TNT Championship Luchasaurus vs Shawn Spears.</li>
-                <li class="font-p">The AEW Women Championship Toni Storm vs Taya Valkyrie.</li>
-                <li class="font-p">The Maint Event: AEW International Championship Orange Cassidy vs Lance Archer.</li>
+                <p class="font-p text-center animate__animated animate__shakeX">2.- All Elite Wrestling anuncia la cartelera de AEW Battle of the Belts VII, esta se compone de los siguientes combates: </p>
+                <ol class="margenol text-center">
+                <li class="font-p text-center animate__animated animate__shakeX">The TNT Championship Luchasaurus vs Shawn Spears.</li>
+                <li class="font-p text-center animate__animated animate__shakeX">The AEW Women Championship Toni Storm vs Taya Valkyrie.</li>
+                <li class="font-p text-center animate__animated animate__shakeX">The Maint Event: AEW International Championship Orange Cassidy vs Lance Archer.</li>
                 </ol>
             </article>
 
             <article class="pregunta">
-                <h2 class="font-t"> ¿Cual es la mejor Empresa de Pro Wrestling en la Actualidad?</h2>
-                <!--Encuesta-->
+                <h2 class="font-t animate__animated animate__fadeInDownBig"> ¿Cual es la mejor Empresa de Pro Wrestling en la Actualidad?</h2>
+                <div class="container text-center">
+                    <!--Encuesta-->
+                    <label class="font-p animate__animated animate__fadeInLeft" for="empresa"> WWE </label>
+                    <input class="seleccion" type="radio" name="empresa" value="WWE">
 
-                <label class="font-p" for="empresa"> WWE </label>
-                <input class="seleccion" type="radio" name="empresa" value="WWE">
+                    <label class="font-p animate__animated animate__fadeInLeft" for="empresa"> AEW </label>
+                    <input type="radio" name="empresa" value="AEW">
 
-                <label class="font-p" for="empresa"> AEW </label>
-                <input type="radio" name="empresa" value="AEW">
+                    <label class="font-p animate__animated animate__fadeInLeft" for="empresa"> NJPW </label>
+                    <input type="radio" name="empresa" value="NJPW">
 
-                <label class="font-p" for="empresa"> NJPW </label>
-                <input type="radio" name="empresa" value="NJPW">
+                    <label class="font-p animate__animated animate__fadeInLeft" for="empresa"> ROH </label>
+                    <input type="radio" name="empresa" value="ROH">
 
-                <label class="font-p" for="empresa"> ROH </label>
-                <input type="radio" name="empresa" value="ROH">
+                    <label class="font-p animate__animated animate__fadeInLeft" for="empresa"> Otra </label>
+                    <input type="text" name="empresa" required>
 
-                <label class="font-p" for="empresa"> Otra </label>
-                <input type="text" name="empresa" required>
-
-                <button type=submit> Enviar </button>
+                    <button type=submit> Enviar </button>
+                </div>
             </article>
         </section>
 
-    <H1 class="font-t">RESUMEN SEMANAL</H1>
+    <H1 class="font-t titulos">RESUMEN SEMANAL</H1>
     <div id="flexbox2"> 
-        <section class="contorno1">
+        <section class="contorno1 animate__animated animate__rotateIn">
             <h3 class="color-letras-video">WWE Monday Night Raw</h3>
             <!--Resumen Semanal WWE-->
             <article>
@@ -83,7 +88,7 @@
             </article>
         </section>
 
-        <section class="contorno1">
+        <section class="contorno1 animate__animated animate__rotateIn">
         <h3 class="color-letras-video">AEW Dinamyte</h3>
         <!--Resumen Semanal AEW-->
             <article>
@@ -92,7 +97,7 @@
             </article>
         </section>
 
-        <section class="contorno1">
+        <section class="contorno1 animate__animated animate__rotateIn">
             <h3 class="color-letras-video">Ring Of Honor</h3>
             <!--Resumen Semanal ROH-->
             <article>
@@ -101,7 +106,7 @@
             </article>
         </section>
 
-        <section class="contorno1">
+        <section class="contorno1 animate__animated animate__rotateIn">
             <h3 class="color-letras-video">New Japan Pro Wrestling</h3>
             <!--Resumen Semanal NJPW-->
             <article>
@@ -111,7 +116,7 @@
         </section>
     </div>
 
-        <section>
+        <section class="newsletter">
             <h2 class="font-t">SUSCRIBETE A NUESTRO NEWSLETTER</h2>
             <!--Formulario Correo-->
             <form action="procesar.php" method="post"></form>
@@ -122,13 +127,16 @@
         </section>
 
         <section>
-            <img src="./images/Iconos/Facebook.png" alt="foto-facebook-redes" width="50" height="50">
-            <img src="./images/Iconos/Threads.jpg" alt="foto-threads-redes" width="50" height="50">
-            <img src="./images/Iconos/instagram.png" alt="foto-instagram-redes" width="50" height="50">
-            <img src="./images/Iconos/twiter.png" alt="foto-twiter-redes" width="50" height="50">
+            <h3 class="font-t newsletter">BUSCANOS EN NUESTRAS REDES SOCIALES</h3>
+                <div class="espacio animate__animated animate__jackInTheBox">
+                    <img src="./images/Iconos/Facebook.png" alt="foto-facebook-redes" width="70" height="70">
+                    <img src="./images/Iconos/Threads.jpg" alt="foto-threads-redes" width="70" height="70">
+                    <img src="./images/Iconos/instagram.png" alt="foto-instagram-redes" width="70" height="70">
+                    <img src="./images/Iconos/twiter.png" alt="foto-twiter-redes" width="70" height="70">
+                </div> 
         </section>
 
-        <footer class="font-t">
+        <footer class="font-t newsletter">
             Copyright © 2023 World Wrestling
         </footer>
 

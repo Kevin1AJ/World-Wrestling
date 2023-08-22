@@ -1,6 +1,7 @@
 @import "colores";
 
 /*variables*/
+$color-primario: red;
 
 * {
     margin-inline-end: 0.5%;
@@ -21,7 +22,6 @@
     font-family: "titulos";
     src: url("../images/Fuentes/Merriweather-LightItalic.ttf");
 }
-
 /*fondo paginas*/
 #fondo-index {
     background-color: #ffffff;
