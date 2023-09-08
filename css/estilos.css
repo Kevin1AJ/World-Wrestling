@@ -2,14 +2,57 @@
 
 /*variables*/
 
+.imagen-fondo {
+    background-image: url("https://espanol.wwe.com/f/styles/shows_header_xl/public/all/2023/08/20230821_Superstars_Header--e0afb59d21c7e7ec1ebfdb470aa288bf.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.imagen-fondo2 {
+    background-image: url("../images/Fondo2.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.imagen-fondo3 {
+    background-image: url("../images/FondoAEW1.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.imagen-fondo4 {
+    background-image: url("../images/FondoNJPW1.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.imagen-fondo5 {
+    background-image: url("../images/FondoROH1.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
 * {
-    margin-inline-end: 0.5%;
-    margin-inline-start: 0.5%;
+    margin-inline-end: none;
+    margin-inline-start: none;
     padding: 0.2%;
 }
 
 .margen {
-    margin: 1%;
+    margin: none;
 }
 
 /*tipografias*/
@@ -68,14 +111,43 @@
 
 .barra-navegacion-roh {
     background-image: radial-gradient(#FF1405,#00000013 );
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff00;
 }
+
+.barra-navegacion-definitiva {
+    background-image: #FF1405;
+    border: 1px solid #000000;
+}
+
+.barra-navegacion-definitiva2 {
+    background-image: #FF1405;
+    border: 1px solid #000000;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.barra-navegacion-definitiva3 {
+    background-image: #FF1405;
+    border: 1px solid #000000;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.distancia {
+    margin-bottom: 10px;
+}
+
+
 
 /*contorno videos*/
 .contorno1 {
-    border: 3px solid #000000;
+    border: 1px solid #ffffff;
     padding-right: 1.3%;
-    background-image: linear-gradient(to top, #a30404 ,#CC0909);
+    background-image: radial-gradient(#FF1405,#00000013 );
+    
     margin-top: 1.5%;
     margin-left: 5%;
     margin-right: 5%;
@@ -94,7 +166,7 @@
 
 /*color letras barra navegacion*/
 .color-link {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .color-link-wwe {
@@ -106,7 +178,7 @@
 }
 
 .color-letras-aew{
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
 .color-letras-njpw {
@@ -120,6 +192,19 @@
 
 .font-t {
     font-family: "titulos", sans-serif;
+    font-size: 20px;
+}
+
+.font-t2 {
+    font-family: "titulos", sans-serif;
+    font-size: 40px;
+    background-image: radial-gradient(#FF1405,#00000013 );
+    border: 1px solid #FFFFFF;
+}
+
+.font-t3 {
+    font-family: "titulos", sans-serif;
+    font-size: 40px;
 }
 
 #font-link {
@@ -130,7 +215,7 @@
 
 /*color boton*/
 .color-boton {
-    background-color: #2AF808;
+    background-color: #FF1405;
     margin-left: 25px;
 }
 
@@ -180,11 +265,19 @@
     margin-left: 250px;
 }
 
+.alineado{
+    text-align: justify;
+}
+
 /*pseudoclases*/
 .color-link:hover {
-    font-size: 40px;
-    color: #91116a;
-    border-bottom: 3px solid #FFFFFF;
+    font-size: 25px;
+    color: #ffffff;    
+}
+
+.otroslink:hover {
+    font-size: 15px;
+    color: #1304ec;
 }
 
 .color-link-wwe:hover{
@@ -202,34 +295,90 @@
 }
 
 a:visited {
-    color: rgb(85, 100, 0);
+    color: #6A5C54;
 }
 
 /*mediaqueries*/
-@include media-breakpoint-only(md) {}
+@media screen and (max-width: 768px) {
+    
+    .imagen-fondo {
+        background-image: url("https://espanol.wwe.com/f/styles/shows_header_xl/public/all/2023/08/20230821_Superstars_Header--e0afb59d21c7e7ec1ebfdb470aa288bf.jpg");
+        background-size: contain;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-@media screen and (max-width: 150%) {
+    .imagen-fondo2 {
+        background-image: url("../images/Fondo2.jpg");
+        background-size: contain;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .imagen-fondo3 {
+        background-image: url("../images/FondoAEW1.jpg");
+        background-size: contain;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .imagen-fondo4 {
+        background-image: url("../images/FondoNJPW1.jpg");
+        background-size: contain;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .imagen-fondo5 {
+        background-image: url("../images/FondoROH1.jpg");
+        background-size: contain;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .margenol{
+        margin-left: 50px;
+    }
+
+    .espacio{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        justify-content: space-around;
+        margin-bottom: 35px;
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+
+
     .contorno1 {
-    border: 1px solid #CC0909;
-    padding-right: 1.3%;
-    background-color: #000000;
-    margin-top: 1.5%;
-    width: "500";
-    height: "350";
-    }
-    .color-letras-video {
-    font-family: "titulos", sans-serif;
-    color: #CC0909;
-    text-align: center;
-    }
-    .barra-navegacion-index {
-    background-color: #000000;
-    color: #ffffff;
-    border: 1px solid #CC0909;
-    text-align: center;
-    margin-top: 3%;
-    margin-bottom: 5%;
-    }
+        border: 1px solid #CC0909;
+        padding-right: 1.3%;
+        background-color: #000000;
+        margin-top: 1.5%;
+        width: "500";
+        height: "350";
+        }
+        .color-letras-video {
+        font-family: "titulos", sans-serif;
+        color: #ffffff;
+        text-align: center;
+        }
+
     .pregunta {
     text-align: center;
     }
@@ -241,5 +390,6 @@ a:visited {
     padding: 3% 3% 3% 3%;
     }
 }
+
 
 /*# sourceMappingURL=estilos.css.map */
